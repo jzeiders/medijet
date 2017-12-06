@@ -5,12 +5,22 @@ body {
 }
 .Screen {
   height: 100vh;
-  width: 100vw;
+  padding: 20px;
   background-color: white;
   box-sizing: border-box;
 }
 .Home {
   padding-top: 5%;
+}
+.Home-Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+.Home-Buttons > * {
+  margin: 0 5px;
+  width: 130px;
 }
 .Center {
   height: 100%;
@@ -25,7 +35,202 @@ body {
   margin-bottom: 40px;
   width: 100%;
 }
+.Title-Header {
+  font-size: 24px;
+  color: white;
+  margin-left: 24px;
+}
+.LoadingSection-Container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
 .LoadingSection {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.LoadingSection > * {
+  margin: 0 5px;
+}
+.Card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;
+}
+.Card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.Card-Country {
+  height: 100px;
+  width: 350px;
+  display: flex;
+}
+.Card-Region {
+  height: 350px;
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Card-Country-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Card-Country-Container > * {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.Card-Country-Left {
+  width: 100px;
+  flex-grow: 0;
+}
+.Card-Country-Right {
+  padding: 10px;
+  flex-grow: 1;
+}
+.Card-Title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.Card-Content {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.Card-Prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  background-color: #004990; /* Jet Blue Blue */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.TipBox {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+}
+.TipBox-Left {
+  overflow: hidden;
+  height: 75px;
+  width: 75px;
+}
+.TipBox-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.TipBox-Title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.TipBox-SubTitle {
+  font-size: 12px;
+}
+.FlightList {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.FlightList-Header {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+
+  height: 50px;
+}
+.Flight-Item {
+  height: 55px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+}
+.Flight-Item:hover {
+  background-color: #f7f7f7;
+}
+.Flight-Item:hover > .Flight-Item-Price {
+  text-decoration: underline;
+}
+.Flight-Item-Price {
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  width: 75px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.Flight-Item-Price-Subheader {
+  color: #aaa;
+  font-size: 11px;
+}
+.Flight-Item-Location {
+  font-size: 24px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Flight-Item-Dates {
+  display: flex;
+  align-items: center;
+}
+.Flight-Item-Buy {
+  align-self: center;
+  margin-left: 20px;
+}
+.world-map {
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  .world-map {
+    display: none;
+  }
+}
+.Region-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-grow {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Subheader-Header {
+  color: white;
+  margin-left: 20px;
+}
+.image-container {
+  overflow: hidden;
+}
+.Region-Card-Content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }

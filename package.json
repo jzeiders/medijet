@@ -3,15 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chart.js": "^2.7.1",
     "d3-geo": "^1.9.0",
     "material-ui": "^0.19.4",
+    "node-fetch": "^1.7.3",
     "react": "^16.2.0",
     "react-autocomplete": "^1.7.2",
+    "react-charts": "^0.1.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "react-tap-event-plugin": "^3.0.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "thunk": "^0.0.1",
     "topojson-client": "^3.0.0"
   },
   "scripts": {

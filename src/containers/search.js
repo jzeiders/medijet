@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import AutoComplete from "material-ui/AutoComplete";
 
 export default class Search extends Component {
-  state = {
-    dataSource: []
-  };
+  constructor(props) {
+    super(props);
+  }
 
   handleUpdateInput = value => {
-    this.setState({
-      dataSource: [value, value + value, value + value + value]
-    });
+    this.props.onChange(value);
   };
 
   render() {
@@ -17,9 +15,10 @@ export default class Search extends Component {
       <div>
         <AutoComplete
           hintText="Procedure"
-          dataSource={this.state.dataSource}
-          onUpdateInput={this.handleUpdateInput}
+          dataSource={this.props.procedures}
+          onUpdateInput={val => this.handleUpdateInput(val)}
           floatingLabelText="Enter Your Procedure"
+          value={this.props.value}
         />
       </div>
     );

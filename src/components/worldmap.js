@@ -3,18 +3,18 @@
 import React, { Component } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
-import worldData from "../assets/worldmap.json";
+import worldData from "../assets/map2.json";
 
 class WorldMap extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       worldData: []
     };
   }
   projection() {
     return geoMercator()
-      .scale(100)
+      .scale(200)
       .translate([800 / 2, 450 / 2]);
   }
   handleEnter(index) {
@@ -29,12 +29,12 @@ class WorldMap extends Component {
   }
   componentDidMount() {
     this.setState({
-      worldData: feature(worldData, worldData.objects.continent).features
+      worldData: feature(worldData, worldData.objects.collection).features
     });
   }
   render() {
     return (
-      <svg width={800} height={450} viewBox="0 0 800 450">
+      <svg width={400} height={450} viewBox="-200 -100 800 450">
         <g className="countries">
           {this.state.worldData.map((d, i) => (
             <path

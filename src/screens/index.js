@@ -1,6 +1,6 @@
 import Countries from "./countries";
-import Graphs from "./graphs";
+import Flights from "./flights";
 import Home from "./home";
 import Regions from "./regions";
 
-export { Countries, Graphs, Home, Regions };
+export { Countries, Flights, Home, Regions };
