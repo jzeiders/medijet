@@ -20,7 +20,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div>
-            <Route path="/home" exact component={Home} />
+            <Route path="/" exact component={Home} />
             <Route path="/regions" component={Regions} />
             <Route path="/countries" component={Countries} />
             <Route path="/flights" component={Flights} />

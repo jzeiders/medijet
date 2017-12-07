@@ -21,7 +21,7 @@ class Country extends React.Component {
     let position = [
       {
         name: procedure.name,
-        location: "home"
+        location: ""
       },
       {
         name: region.selected.name,

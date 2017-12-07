@@ -20,7 +20,7 @@ class Regions extends React.Component {
     let position = [
       {
         name: procedure.name,
-        location: "home"
+        location: ""
       }
     ];
     return (

@@ -7,7 +7,7 @@ export default class Header extends React.Component {
     let { position, history } = this.props;
     return (
       <div className="Header">
-        <div className="Title-Header" onClick={() => history.push("/home")}>
+        <div className="Title-Header" onClick={() => history.push("/")}>
           MediJet
         </div>
         <div className="Subheader-Header">
