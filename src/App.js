@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import thunk from "redux-thunk";
 import Reducer from "./reducers";
 import { Countries, Flights, Home, Regions } from "./screens";
